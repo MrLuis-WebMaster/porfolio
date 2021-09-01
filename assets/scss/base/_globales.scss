@@ -1,0 +1,92 @@
+html {
+     font-size: 62.5%;
+     box-sizing: border-box;
+}
+*, *:before, *:after {
+     box-sizing: inherit;
+}
+body {
+     font-family: $fuente_principal;
+     font-size: 1.6rem;
+     line-height: 1.2;
+     a {
+      color: #149ddd;
+      text-decoration: none;
+
+      &:hover{
+        color: #37b3ed;
+        text-decoration: none;
+      }
+    }    
+}
+p {
+     color: $negro;
+     font-size: 1.8rem;
+}
+
+img,
+ picture {
+     width: 100%;
+     display: block;
+ }
+
+ h1, h2, h3 {
+     font-family: $fuente_principal;
+     margin: $separacion / 2 0;
+     font-weight: 300;
+
+    
+}
+h1 {
+     font-size: 3.8rem;
+ }
+ h2 {
+     font-size: 3.4rem;
+ }
+ h3 {
+     font-size: 3rem;
+}
+ h4 {
+    font-size: 2.6rem;
+}
+
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background: $blanco;
+}
+
+.section-title {
+  padding-bottom: 3rem;
+
+  h2 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    color: #173b6c;
+    &::after{
+      content: '';
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: $naranja;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+

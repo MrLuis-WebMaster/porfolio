@@ -1,0 +1,33 @@
+.skills {
+    .progress {
+      height: 6rem;
+      display: block;
+      background: none;
+      border-radius: 0;
+      font-size: 1.3rem;
+    }
+
+    .skill{
+      padding: 0;
+      margin: 0 0 6px 0;
+      text-transform: uppercase;
+      display: block;
+      font-weight: 600;
+      color: $negro;
+
+      .val {
+        float: right;
+        font-style: normal;
+      }
+    }
+    .progress-bar-wrap {
+      background: $blanco;
+      height: 1rem;
+    }
+    .progress-bar {
+      width: 1px;
+      height: 1rem;
+      transition: .9s;
+      background-color: $verde;
+  }
+}
